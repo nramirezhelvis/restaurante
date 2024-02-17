@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+}
+
+:root {
+    --color-gris: #555555;
+    --color-azul-claro: #06f;
+    --color-black: #000;
+    --font-Arial: Arial, Helvetica, sans-serif;
+    --font-Mulish: "Mulish", sans-serif;
+    --font-Saira: "Saira Extra Condensed", sans-serif;
+    --font-SourceSans: "Source Sans 3", sans-serif;
+    --font-Segoe: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
