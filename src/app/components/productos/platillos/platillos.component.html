@@ -1,4 +1,36 @@
-<div class="platillos">
-    <h2>Platillos</h2>
-    <h2>menú</h2>
-</div>
+<section class="comida">
+    <button class="comida__view-button" (click)="verAgregado()"><i class="bi bi-clipboard-fill"></i></button>
+    <section class="comida__platillos">
+        <h2 class="comida__platillos-title">Platillos:</h2>
+        <div class="comida__platillos-container">
+            @for (platillo of data; track platillo.codeProduct) {
+            @if (platillo.quantity!=0) {
+            <article class="comida__platillo">
+                <div class="comida__platillo-image">
+                    <img [src]="platillo.image">
+                </div>
+                <div class="comida__platillo-info">
+                    <p class="comida__platillo-name">{{platillo.name}}</p>
+                    <ul class="comida__platillo-attributes">
+                        <li class="comida__platillo-attribute">+ensalada</li>
+                        <li class="comida__platillo-attribute">+ensalada</li>
+                        <li class="comida__platillo-attribute">+ensalada</li>
+                        <li class="comida__platillo-attribute">+ensalada</li>
+                        <li class="comida__platillo-attribute">+ensalada</li>
+                        <li class="comida__platillo-attribute">+ensalada</li>
+                        <li class="comida__platillo-attribute">+ensalada</li>
+                        <li class="comida__platillo-attribute">+ensalada</li>
+                        <li class="comida__platillo-attribute">+ensalada</li>
+                    </ul>
+                    <p class="comida__platillo-price">S/.{{platillo.price}}</p>
+                </div>
+                <input class="comida__add-btn" type="button" value="Agregar" (click)="agregarAlCarrito()" />
+            </article>
+            }
+            }
+        </div>
+    </section>
+    <form class="comida__form">
+        <input class="comida__buy-btn" type="button" value="Realizar pedido">
+    </form>
+</section>

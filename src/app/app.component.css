@@ -36,6 +36,6 @@
 }
 
 .header__navbar a:hover {
-    border-bottom: 1px solid #1ab989;
+    border-bottom: 1.9px solid #ff7300;
     color: var(--color-black);
 }
